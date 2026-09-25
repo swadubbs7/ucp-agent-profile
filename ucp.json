@@ -1,0 +1,39 @@
+{
+  "ucp": {
+    "version": "2026-04-08",
+    "agent": {
+      "name": "swilliams-shopping-agent",
+      "description": "Personal shopping/discovery agent for querying the Shopify Global Catalog."
+    },
+    "services": [
+      {
+        "capability": "dev.ucp.shopping.catalog.search",
+        "version": "2026-04-08",
+        "spec": "https://ucp.dev/latest/specification/shopping/catalog/mcp/",
+        "transport": "mcp"
+      },
+      {
+        "capability": "dev.ucp.shopping.catalog.lookup",
+        "version": "2026-04-08",
+        "spec": "https://ucp.dev/latest/specification/shopping/catalog/mcp/",
+        "transport": "mcp"
+      }
+    ],
+    "capabilities": [
+      "dev.ucp.shopping.catalog.search",
+      "dev.ucp.shopping.catalog.lookup",
+      "dev.shopify.catalog.global"
+    ],
+    "signing_keys": [
+      {
+        "kty": "EC",
+        "crv": "P-256",
+        "x": "tsHBh6AcGONQlUetKO-xrvXqUG2CbHgFkLNq8KTc4FM",
+        "y": "n_NRPgiUvw3mnXyG-f78BH25U4-NyLhvZPxh-FffXDo",
+        "kid": "ucp-key-0a22d3162333",
+        "use": "sig",
+        "alg": "ES256"
+      }
+    ]
+  }
+}
